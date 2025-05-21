@@ -1,0 +1,84 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume - Sam Gauper</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Sam Gauper</h1>
+        <nav>
+            <ul>
+                <li><a href="resume.html">Resume</a></li>
+                <li><a href="cover-letter.html">Cover Letter</a></li>
+                <li><a href="career-goals.html">Career Goals</a></li>
+            </ul>
+        </nav>
+    </header>
+<main>
+        <article>
+            <h2>Résumé</h2>
+            <section>
+                <h3>Professional Summary</h3>
+                <p><span class="highlight">Web Developer</span> with a passion for creating responsive websites.<br>
+                Skilled in <strong>HTML</strong>, <em>CSS</em>, and JavaScript.</p>
+                <hr>
+            </section>
+            <section>
+                <h3>Education</h3>
+                <p>B.S. in Early Childhood Education</p>
+            </section>
+            <section>
+                <h3>Experience</h3>
+                <table>
+                    <caption>Work History</caption>
+                    <tr>
+                        <th>Job Title</th>
+                        <th>Company</th>
+                        <th>Dates</th>
+                        <th>Duties</th>
+                    </tr>
+                    <tr>
+                        <td>Junior Developer</td>
+                        <td>Tech Corp</td>
+                        <td>2023-2024</td>
+                        <td>Built web applications</td>
+                    </tr>
+                    <tr>
+                        <td>Intern</td>
+                        <td>Web Solutions</td>
+                        <td>2022-2023</td>
+                        <td>Assisted in UI design</td>
+                    </tr>
+                </table>
+            </section>
+            <section>
+                <h3>Skills</h3>
+                <ul>
+                    <li>HTML & CSS</li>
+                    <li>JavaScript</li>
+                    <li>Git & GitHub</li>
+                </ul>
+            </section>
+            <div id="current-date"></div>
+        </article>
+    </main>
+    <footer>
+        <p> Contact: samuel.gauper@gmail.com | (715) 417-0438</p>
+    </footer>
+    <script>
+        // Populate current date
+        const dateDiv = document.getElementById('current-date');
+        const today = new Date().toLocaleDateString('en-US', {
+            year: 'numeric',
+            month: 'long',
+            day: 'numeric'
+        });
+        dateDiv.textContent = `Updated: ${today}`;
+
+        // Console message
+        console.log('Résumé page loaded successfully');
+    </script>
+</body>
+</html>
