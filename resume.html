@@ -1,84 +1,87 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Resume - Sam Gauper</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Résumé - Sam Gauper</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
         <h1>Sam Gauper</h1>
-        <nav>
-            <ul>
-                <li><a href="resume.html">Resume</a></li>
-                <li><a href="cover-letter.html">Cover Letter</a></li>
-                <li><a href="career-goals.html">Career Goals</a></li>
-            </ul>
-        </nav>
+        <p class="contact-info">2750 Wild Pines Lane, Apartment 225, Naples, FL 34112 | (715) 417-0438 | samuel.gauper@gmail.com</p>
     </header>
-<main>
-        <article>
-            <h2>Résumé</h2>
-            <section>
-                <h3>Professional Summary</h3>
-                <p><span class="highlight">Web Developer</span> with a passion for creating responsive websites.<br>
-                Skilled in <strong>HTML</strong>, <em>CSS</em>, and JavaScript.</p>
+    <nav>
+        <ul>
+            <li><a href="resume.html">Résumé</a></li>
+            <li><a href="cover-letter.html">Cover Letter</a></li>
+            <li><a href="career-goals.html">Career Goals</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section>
+            <h2>Professional Summary</h2>
+            <article>
+                <p>Dynamic professional transitioning from education to <strong>technology and edtech</strong>, with expertise in digital tools, technical support, and content development. Skilled in leveraging <em>Google Workspace, Microsoft Office, and web technologies</em> to deliver user-friendly solutions and engaging educational content.</p>
                 <hr>
-            </section>
-            <section>
-                <h3>Education</h3>
-                <p>B.S. in Early Childhood Education</p>
-            </section>
-            <section>
-                <h3>Experience</h3>
+                <p>Proficient in HTML, CSS, JavaScript, and IT troubleshooting, with a passion for creating impactful learning experiences through technology.</p>
+            </article>
+        </section>
+        <section>
+            <h3>Education</h3>
+            <article>
                 <table>
-                    <caption>Work History</caption>
+                    <caption>Educational Background</caption>
                     <tr>
-                        <th>Job Title</th>
-                        <th>Company</th>
-                        <th>Dates</th>
-                        <th>Duties</th>
+                        <th>Degree</th>
+                        <th>Institution</th>
+                        <th>Location</th>
+                        <th>Year</th>
                     </tr>
                     <tr>
-                        <td>Junior Developer</td>
-                        <td>Tech Corp</td>
-                        <td>2023-2024</td>
-                        <td>Built web applications</td>
+                        <td>B.S. in Early Childhood Education</td>
+                        <td>University of Wisconsin - River Falls</td>
+                        <td>River Falls, WI</td>
+                        <td>Graduated Summa Cum Laude 2022</td>
                     </tr>
                     <tr>
-                        <td>Intern</td>
-                        <td>Web Solutions</td>
-                        <td>2022-2023</td>
-                        <td>Assisted in UI design</td>
+                        <td>B.S. in Computer Science (In Progress)</td>
+                        <td>Western Governors University</td>
+                        <td>Online</td>
+                        <td>Ongoing</td>
                     </tr>
                 </table>
-            </section>
-            <section>
-                <h3>Skills</h3>
-                <ul>
-                    <li>HTML & CSS</li>
-                    <li>JavaScript</li>
-                    <li>Git & GitHub</li>
-                </ul>
-            </section>
-            <div id="current-date"></div>
-        </article>
+            </article>
+        </section>
+        <section>
+            <h4>Professional Experience</h4>
+            <p><strong>Elementary Teacher</strong>, Golden Gate Elementary School, Naples, FL (2022–Present)</p>
+            <ul>
+                <li><span class="highlight">Provided technical support</span> for classroom devices and LMS platforms, troubleshooting issues to ensure seamless digital learning.</li>
+                <li>Developed engaging digital content using Google Workspace and Microsoft Office, enhancing student learning outcomes.</li>
+                <li>Collaborated with IT staff to integrate educational technology, aligning with district standards.</li>
+            </ul>
+        </section>
+        <section>
+            <h5>Skills</h5>
+            <ul>
+                <li>Technical Proficiency: HTML, CSS, JavaScript, Google Workspace, Microsoft Office, LMS platforms</li>
+                <li>IT Support: Troubleshooting hardware/software issues, user support, basic networking</li>
+                <li>Content Development: Creating educational materials for digital platforms</li>
+                <li>Communication: Exceptional verbal and written skills for technical and non-technical audiences</li>
+            </ul>
+        </section>
+        <div id="current-date"></div>
     </main>
     <footer>
-        <p> Contact: samuel.gauper@gmail.com | (715) 417-0438</p>
+        <p>© 2025 Sam Gauper</p>
     </footer>
     <script>
-        // Populate current date
         const dateDiv = document.getElementById('current-date');
-        const today = new Date().toLocaleDateString('en-US', {
-            year: 'numeric',
-            month: 'long',
-            day: 'numeric'
-        });
-        dateDiv.textContent = `Updated: ${today}`;
-
-        // Console message
-        console.log('Résumé page loaded successfully');
+        const today = new Date();
+        dateDiv.innerHTML = `<p>Updated on: ${today.toLocaleDateString()}</p>`;
+        
+        console.log("Sam Gauper's Resume page loaded successfully!");
     </script>
 </body>
 </html>
